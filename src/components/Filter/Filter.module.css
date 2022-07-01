@@ -1,0 +1,9 @@
+.labels {
+    color: rgb(0, 157, 255);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.inputs {
+    margin: 10px;
+}
