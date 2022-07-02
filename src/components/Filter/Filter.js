@@ -1,19 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import s from 'components/Filter/Filter.module.css';
+import { Label, Input } from './Filter.styled';
 
 export default function Filter({ value, onFilterChange }) {
   return (
-    <label htmlFor="filter" className={s.labels}>
+    <Label htmlFor="filter">
       Find contacts by name:
-      <input
+      <Input
         type="text"
         name="filter"
         value={value}
         onChange={onFilterChange}
-        className={s.inputs}
       />
-    </label>
+    </Label>
   );
 }
 

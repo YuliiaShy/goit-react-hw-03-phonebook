@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import s from './Container.module.css';
+import { Div } from './Container.styled';
 
 export default function Container({ children }) {
   return (
-    <div className={s.container}>
+    <Div>
       {children}
-    </div>
+    </Div>
   );
 }
 

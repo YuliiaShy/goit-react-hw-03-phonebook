@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import s from 'components/Contacts/Contacts.module.css';
+import s from 'components/Contact/Contact.module.css';
 
-export default function Contacts({ id, name, number, onDelete }) {
+export default function Contact ({ id, name, number, onDelete }) {
   return (
     <li className={s.items}>
       <p className={s.contacts}>
@@ -14,7 +14,7 @@ export default function Contacts({ id, name, number, onDelete }) {
   );
 }
   
-Contacts.propTypes = {
+Contact.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   number: PropTypes.string.isRequired,
