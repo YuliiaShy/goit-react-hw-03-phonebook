@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { nanoid } from 'nanoid';
 import Container from 'components/Container/Container';
-import Forms from 'components/Form/Form';
+import Form from 'components/Form/Form';
 import ContactList from 'components/ContactList/ContactList';
 import Filter from 'components/Filter/Filter';
 import contacts from 'components/contacts.json';
@@ -53,7 +53,7 @@ class App extends Component {
     return (
       <Container>
         <h1>Phonebook</h1>
-        <Forms onSubmit={this.formSubmitHandler}/>
+        <Form onSubmit={this.formSubmitHandler}/>
         <h2>Contacts</h2>
         <Filter value={filter} onFilterChange={this.handleFilterChange} />
         <ContactList list={this.getFindContact(filter)} onDelete={this.deleteContact} />
