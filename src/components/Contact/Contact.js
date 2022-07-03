@@ -1,16 +1,16 @@
 import PropTypes from 'prop-types';
-import s from 'components/Contact/Contact.module.css';
+import { Items, Text, Button } from './Contact.styled';
 
 export default function Contact ({ id, name, number, onDelete }) {
   return (
-    <li className={s.items}>
-      <p className={s.contacts}>
+    <Items>
+      <Text>
         {name}: {number}
-      </p>
-      <button type="button" onClick={() => onDelete(id)} className={s.buttons}>
+      </Text>
+      <Button type="button" onClick={() => onDelete(id)}>
         Delete
-      </button>
-    </li>
+      </Button>
+    </Items>
   );
 }
   
